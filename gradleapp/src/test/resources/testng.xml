@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression suite" time-out="1000" verbose="1">
+
+    <test name = "motionZoneParameters">
+        <parameter name="zones_number" value = "one"/>
+        <parameter name="zones_name" value="Backyard"/>
+<!--        <packages>
+            <package name="com.example.MotionZonesParametersTest"/>
+        </packages>-->
+        <classes>
+            <class name="com.example.MotionZonesParametersTest"/>
+        </classes>
+    </test>
+
+<!--
+    <test name="@LogInTests">
+    <groups>
+        <run>
+            <include name="Regression"/>
+        </run>
+    </groups>
+    <classes>
+        <class name="com.example.LogInTests">
+            <methods>
+                <exclude name="LoginOnTablet"/>
+            </methods>
+        </class>
+    </classes>
+</test>-->
+</suite>
